@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Garder Quiz</title>
+  </head>
+  <body>
+    <div class="garder-quiz garder-quiz--active">
+      <div class="garder-quiz-container">
+        <div class="garder-quiz-top">
+          <div class="garder-quiz-top-title">
+            Ответьте на несколько вопросов, чтобы получить предварительный
+            расчёт
+          </div>
+          <div class="garder-quiz-step-counter"><span>1</span> / 7</div>
+        </div>
+        <div class="garder-quiz-close">
+          <svg
+            style="pointer-events: none"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18M6 6L18 18"
+              stroke="#ACACAC"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <div class="quiz-steps">
+          <div class="quiz-step quiz-step--active">
+            <div class="quiz-step-title">У Вас есть проект/эскиз мебели?</div>
+
+            <div class="quiz-step-options">
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">Да</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">Нет</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-step">
+            <div class="quiz-step-title">какая мебель вас интересует?</div>
+
+            <div class="quiz-step-gallery">
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">Мебелировка под ключ</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">Гардеробные</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">Шкафы</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">Прихожие</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">Кухни</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">ТВ зоны</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" class="checkbox-input" />
+                <img src="./img/skaf.jpg" alt="" />
+                <label for="">Шкафы</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-step">
+            <div class="quiz-step-title">Укажите размеры помещения/мебели</div>
+
+            <div class="quiz-step-inputs">
+              <input type="text" placeholder="Ширина, мм" />
+              <input type="text" placeholder="Глубина, мм" />
+              <input type="text" placeholder="Высота, мм" />
+            </div>
+          </div>
+
+          <div class="quiz-step">
+            <div class="quiz-step-title">
+              Укажите пожелания по материалам и наполнению
+            </div>
+
+            <div class="quiz-step-inputs">
+              <input
+                type="text"
+                placeholder="Например, фасады эмаль фрезеровка, 3 выдвижных ящика, 2 штанги, полки, подсветка"
+              />
+            </div>
+          </div>
+
+          <div class="quiz-step">
+            <div class="quiz-step-title">У Вас есть проект/эскиз мебели?</div>
+
+            <div class="quiz-step-options">
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">В течении 1-го месяца</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">В течении 2-х месяцев</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">В течении 3-6 месяцев</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-step">
+            <div class="quiz-step-title">
+              Укажите комфортный для Вас бюджет на мебель
+            </div>
+
+            <div class="quiz-step-options quiz-step-options--col">
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">150 000 - 200 000 руб.</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">250 000 - 300 000 руб.</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">350 000 - 400 000 руб.</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio-input" />
+                <label for="">от 500 000 руб.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-step">
+            <div class="quiz-step-title">УКАЖИТЕ ВАШИ КОНТАКТНЫЕ ДАННЫЕ</div>
+
+            <form class="quiz-step-form">
+              <input type="text" placeholder="Имя" />
+              <input type="text" placeholder="Телефон" />
+              <input
+                type="text"
+                placeholder="Удобный канал связи WA, Tg, Phone и время"
+              />
+              <input type="file" class="input-file" />
+              <button class="file-btn">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.898 6.44461C15.7679 6.32047 15.5729 6.32047 15.4428 6.44461L6.56726 14.9172C5.91703 15.5379 5.03923 15.8793 4.09641 15.8793C3.15358 15.8793 2.27578 15.5379 1.62556 14.9172C0.975335 14.2965 0.650223 13.4586 0.650223 12.5585C0.650223 11.6585 1.00785 10.8206 1.65807 10.1999L10.5336 1.72727C11.4764 0.827247 12.9394 0.889317 13.9798 1.85141C14.9877 2.8135 15.0527 4.24111 14.1098 5.14113L5.75448 13.1172C5.29932 13.5517 4.51905 13.5517 4.0639 13.1172C3.60874 12.6827 3.60874 11.9378 4.0639 11.5033L9.72084 6.10322C9.85089 5.97908 9.85089 5.79287 9.72084 5.66873C9.5908 5.54459 9.39573 5.54459 9.26569 5.66873L3.60874 11.0688C2.89349 11.7516 2.89349 12.8689 3.60874 13.5517C4.32399 14.2344 5.49439 14.2344 6.20964 13.5517L14.5325 5.60666C15.7354 4.45836 15.6704 2.65832 14.4025 1.44795C13.1345 0.237579 11.2489 0.175508 10.046 1.32381L1.20291 9.76537C0.422645 10.5102 0 11.5033 0 12.5585C0 13.6137 0.422645 14.6069 1.20291 15.3517C1.98318 16.0965 3.02354 16.5 4.12892 16.5C5.2343 16.5 6.27466 16.0965 7.05493 15.3517L15.9305 6.8791C16.028 6.75496 16.028 6.56875 15.898 6.44461Z"
+                    fill="#F7931D"
+                  />
+                </svg>
+                Прикрепить проект
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="quiz-nav">
+          <div class="quiz-nav-btn quiz-btn-back">
+            <svg
+              style="pointer-events: none"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 7.5093C16 7.30273 15.9352 7.10461 15.8198 6.95854C15.7044 6.81247 15.5478 6.73041 15.3846 6.73041H0.615384C0.452174 6.73041 0.295649 6.81247 0.180242 6.95854C0.0648346 7.10461 0 7.30273 0 7.5093C0 7.71588 0.0648346 7.91399 0.180242 8.06006C0.295649 8.20614 0.452174 8.2882 0.615384 8.2882H15.3846C15.5478 8.2882 15.7044 8.20614 15.8198 8.06006C15.9352 7.91399 16 7.71588 16 7.5093Z"
+                fill="#232323"
+              />
+              <path
+                d="M5.97335 0.72779C5.85796 0.581929 5.70155 0.5 5.53848 0.5C5.3754 0.5 5.21899 0.581929 5.10361 0.72779L0.180528 6.95895C0.0652866 7.105 0.000556946 7.30296 0.000556946 7.50937C0.000556946 7.71578 0.0652866 7.91375 0.180528 8.05979L5.10361 14.291C5.22026 14.4285 5.37456 14.5034 5.53398 14.4999C5.69341 14.4963 5.84552 14.4146 5.95827 14.2719C6.07102 14.1292 6.1356 13.9366 6.13842 13.7348C6.14123 13.5331 6.08205 13.3378 5.97335 13.1901L1.48514 7.50937L5.97335 1.82863C6.08859 1.68259 6.15332 1.48462 6.15332 1.27821C6.15332 1.0718 6.08859 0.873834 5.97335 0.72779Z"
+                fill="#232323"
+              />
+            </svg>
+            Назад
+          </div>
+          <div class="quiz-nav-btn quiz-btn-next">
+            Далее
+            <svg
+              style="pointer-events: none"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 7.5093C0 7.30273 0.0648349 7.10461 0.180242 6.95854C0.295649 6.81247 0.452174 6.73041 0.615385 6.73041H15.3846C15.5478 6.73041 15.7044 6.81247 15.8198 6.95854C15.9352 7.10461 16 7.30273 16 7.5093C16 7.71588 15.9352 7.91399 15.8198 8.06006C15.7044 8.20614 15.5478 8.2882 15.3846 8.2882H0.615385C0.452174 8.2882 0.295649 8.20614 0.180242 8.06006C0.0648349 7.91399 0 7.71588 0 7.5093Z"
+                fill="#232323"
+              />
+              <path
+                d="M10.0267 0.72779C10.142 0.581929 10.2984 0.5 10.4615 0.5C10.6246 0.5 10.781 0.581929 10.8964 0.72779L15.8195 6.95895C15.9347 7.105 15.9994 7.30296 15.9994 7.50937C15.9994 7.71578 15.9347 7.91375 15.8195 8.05979L10.8964 14.291C10.7797 14.4285 10.6254 14.5034 10.466 14.4999C10.3066 14.4963 10.1545 14.4146 10.0417 14.2719C9.92898 14.1292 9.8644 13.9366 9.86158 13.7348C9.85877 13.5331 9.91795 13.3378 10.0267 13.1901L14.5149 7.50937L10.0267 1.82863C9.91141 1.68259 9.84668 1.48462 9.84668 1.27821C9.84668 1.0718 9.91141 0.873834 10.0267 0.72779Z"
+                fill="#232323"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="quiz-navigation"></div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
