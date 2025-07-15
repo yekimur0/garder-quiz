@@ -5,7 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeBtn = document.querySelector('.garder-quiz-close');
   const stepCounter = document.querySelector('.garder-quiz-step-counter span');
   const quizContainer = document.querySelector('.garder-quiz');
-  
+  const garderQuizThanks = document.querySelector('.garder-quiz-thanks');
+  const garderQuizThanksClose = document.querySelector('.garder-quiz-thanks-close');
+
+
+  garderQuizThanksClose.addEventListener('click',(e) => {
+    garderQuizThanks.classList.remove('active')
+  })
+
   let currentStep = 0;
   const totalSteps = quizSteps.length;
   const hasProjectQuestionIndex = 0;

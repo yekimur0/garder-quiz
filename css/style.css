@@ -305,3 +305,66 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+.garder-quiz-thanks {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s eaes;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .garder-quiz-thanks-container {
+    padding: 80px 20px;
+    max-width: 820px;
+    position: relative;
+    background: #232323;
+    width: 100%;
+  }
+
+  .garder-quiz-thanks-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+  }
+  .garder-quiz-thanks-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .garder-quiz-thanks-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}
